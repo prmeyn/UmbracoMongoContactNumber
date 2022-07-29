@@ -5,6 +5,6 @@
 		<input type="text" name="input" numbers-only ng-model="model.value.ContactNumber">
 		<img ng-if="model.value.CountryCodeAndPhoneCode && model.value.ContactNumber && model.db[model.value.CountryCodeAndPhoneCode.split(model.separator)[0]].ValidLengths.indexOf(model.value.ContactNumber.split(' ').join('').length) !== -1" src="/App_Plugins/UmbracoMongoContactNumber/input_check.svg" class="input-field-validation-success" />
 	</div>
-	<span ng-hide="!(model.config.allowEditing)" ng-if="!inEditState" class="country-picker-edit-label" ng-click="onEdit()">{{translations.ContactNumber_Edit}}</span>
-	<span ng-hide="!(model.config.allowEditing)" ng-if="!inEditState" class="country-picker-edit-label reset" ng-click="onEdit(true)">{{translations.ContactNumber_Delete}}</span>
+	<span ng-hide="!(model.config.allowEditing == 1)" ng-if="!inEditState" class="country-picker-edit-label" ng-click="onEdit()">{{translations.ContactNumber_Edit}}</span>
+	<span ng-hide="!(model.config.allowEditing == 1)" ng-if="!inEditState" class="country-picker-edit-label reset" ng-click="onEdit(true)">{{translations.ContactNumber_Delete}}</span>
 </div>
