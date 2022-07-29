@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Group_11637" data-name="Group 11637" transform="translate(-965 -1193)">
+    <path id="Path_8091" data-name="Path 8091" d="M4,0H21a4,4,0,0,1,4,4V21a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(965 1193)" fill="#26c281"/>
+    <g id="checkmark_copy_2" data-name="checkmark copy 2" transform="translate(970.533 1200.92)">
+      <g id="Group_11157" data-name="Group 11157" transform="translate(0)">
+        <path id="Path_8087" data-name="Path 8087" d="M13.073,54.078a.708.708,0,0,0-.989.065l-7.461,8.4L1.211,58.955a.709.709,0,0,0-.99-.031.683.683,0,0,0-.032.976L4.13,64.04a.708.708,0,0,0,.512.217h.012a.7.7,0,0,0,.516-.235l7.97-8.97A.683.683,0,0,0,13.073,54.078Z" transform="translate(0.001 -53.907)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

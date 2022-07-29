@@ -1,0 +1,10 @@
+<div ng-controller="ContactNumberController">
+	<label ng-if="!inEditState">{{("+" + model.value.CountryCodeAndPhoneCode.split(model.separator)[1] + " " + model.value.ContactNumber)}}</label>
+	<div ng-if="inEditState">
+		<select ng-model="model.value.CountryCodeAndPhoneCode" ng-options="item.ID as item.CountryName +' (+' + item.ID.split(model.separator)[1] +')' for item in model.list | orderBy:'CountryName'"></select>
+		<input type="text" name="input" numbers-only ng-model="model.value.ContactNumber">
+		<img ng-if="model.value.CountryCodeAndPhoneCode && model.value.ContactNumber && model.db[model.value.CountryCodeAndPhoneCode.split(model.separator)[0]].ValidLengths.indexOf(model.value.ContactNumber.split(' ').join('').length) !== -1" src="/App_Plugins/UmbracoMongoContactNumber/input_check.svg" class="input-field-validation-success" />
+	</div>
+	<span ng-hide="!(model.config.allowEditing)" ng-if="!inEditState" class="country-picker-edit-label" ng-click="onEdit()">{{translations.ContactNumber_Edit}}</span>
+	<span ng-hide="!(model.config.allowEditing)" ng-if="!inEditState" class="country-picker-edit-label reset" ng-click="onEdit(true)">{{translations.ContactNumber_Delete}}</span>
+</div>

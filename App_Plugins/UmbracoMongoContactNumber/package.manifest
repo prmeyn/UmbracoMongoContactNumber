@@ -1,0 +1,33 @@
+﻿{
+	"name": "UmbracoMongoContactNumber",
+	"version": "1.0.0",
+	"allowPackageTelemetry": true,
+	"propertyEditors": [
+		{
+			"alias": "UmbracoMongoContactNumber",
+			"name": "Contact Phone Number",
+			"icon": "icon-code",
+			"group": "Rich Content",
+			"editor": {
+				"view": "~/App_Plugins/UmbracoMongoContactNumber/index.html",
+				"valueType": "JSON"
+			},
+			"prevalues": {
+				"fields": [
+					{
+						"label": "Allow Editing",
+						"description": "Show or hide the Edit button from the UI only",
+						"key": "allowEditing",
+						"view": "boolean"
+					}
+				]
+			}
+		}
+	],
+	"javascript": [
+		"~/App_Plugins/UmbracoMongoContactNumber/index.js"
+	],
+	"css": [
+		"~/App_Plugins/UmbracoMongoContactNumber/style.css"
+	]
+}

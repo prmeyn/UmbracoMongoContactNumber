@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>UmbracoMongoContactNumber</Product>
+    <PackageId>UmbracoMongoContactNumber</PackageId>
+    <Title>UmbracoMongoContactNumber</Title>
+    <Description>This package gives Umbraco editors to have the pleasure of using a property editor that is specific to phone numbers with their respective country phone codes etc, the database storing country phone code data is in MongoDB.</Description>
+    <PackageTags>umbraco plugin package</PackageTags>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.1" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.1" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	  <PackageReference Include="UmbracoMongoSmsDataServices" Version="3.0.0" />
+	  <None Include=".\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\UmbracoMongoContactNumber\**">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <None Include="build\**">
+      <Pack>true</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
