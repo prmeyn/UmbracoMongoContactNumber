@@ -1,6 +1,5 @@
 angular.module("umbraco").controller("ContactNumberController", function ($scope, $routeParams, $http, localizationService) {
 	$scope.model.separator = "#";
-	console.log($scope.model.config);
 	$http.get("backoffice/UmbracoMongoContactNumber/CountryCodeDataApi/GetCountryPhoneCodeDataDictionary").then(function (response) {
 		$scope.model.db = JSON.parse(response.data);
 		if (!$scope.model.value.CountryCodeAndPhoneCode || !$scope.model.value.ContactNumber) {
