@@ -28,8 +28,4 @@
       <PackagePath>buildTransitive</PackagePath>
     </None>
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\UmbracoMongoSmsDataServices\UmbracoMongoSmsDataServices.csproj" />
-  </ItemGroup>
 </Project>
