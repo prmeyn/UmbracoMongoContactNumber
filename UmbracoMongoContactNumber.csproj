@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.2.0" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.2.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.2.1" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.2.1" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	  <PackageReference Include="UmbracoKeyValuePropertyEditor" Version="5.0.0" />
 	  <PackageReference Include="UmbracoMongoSmsDataServices" Version="5.0.1" />
@@ -23,6 +23,10 @@
     <Content Include="App_Plugins\UmbracoMongoContactNumber\**">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\UmbracoCountryPicker\**">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </Content>
     <None Include="build\**">
       <Pack>true</Pack>
