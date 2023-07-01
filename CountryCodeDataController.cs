@@ -10,7 +10,7 @@ namespace UmbracoMongoContactNumber
 	[ValidateAngularAntiForgeryToken]
 	[IsBackOffice]
 	[PluginController("UmbracoMongoContactNumber")] //backoffice/UmbracoMongoContactNumber/CountryCodeDataApi/GetCountryPhoneCodeDataDictionary
-	public class CountryCodeDataApiController : UmbracoAuthorizedJsonController
+	public sealed class CountryCodeDataApiController : UmbracoAuthorizedJsonController
 	{
 		[HttpGet]
 		public string GetCountryPhoneCodeDataDictionary()
